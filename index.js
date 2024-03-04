@@ -63,7 +63,7 @@ const cardData = async (categoryName) => {
     </div>
     <div class=" bg-green-700 w-6 rounded-full flex flex-col items-center justify-center">
         <button class="" onclick="parseValue('${item.title}','${item.view_count}');
-      addValue(true)"><i  class="rounded-full fa-solid fa-envelope" style="color: #63E6BE;"></i></button>
+      addValue(true); parseValue3('Introduction to Python: A Beginner\'s Guide', '2650')"><i  class="rounded-full fa-solid fa-envelope" style="color: #63E6BE;"></i></button>
     </div>
    </div>
         </div>
@@ -77,6 +77,11 @@ const cardData = async (categoryName) => {
 // ****************************
 // counterApp()
 
+const parseValue3=(data)=>{
+  console.log(data);
+}
+
+
 let sum = 0;
 const addValue = (f) => {
   let count = document.getElementById("count");
@@ -85,8 +90,10 @@ const addValue = (f) => {
   console.log(sum);
 };
 
+
 const parseValue = (item , item2) => {
-  console.log(item2);
+  const numericValue = item2.replace(/'/g, "&#39;")
+  console.log(numericValue);
   const showDetails = document.getElementById("showDetails");
   let div2 = document.createElement("div");
   div2.innerHTML = `
