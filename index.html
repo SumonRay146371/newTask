@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,60 +23,82 @@
     <main>
       <section class="container mx-auto px-8 lg:px-24 ">
         <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class=" navbar-start">
+            <div class=" dropdown flex gap-3 items-center ">
+              <!-- <h1 class="hidden lg:block text-[36px] font-extrabold "></h1> -->
+              <img class="hidden lg:block " src=" ./images/logo.png" alt="">
+              <div class="lg:hidden " tabindex="0" role="button" class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </div>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Homepage</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
+              <ul tabindex="0" class="mx-7 mb-3 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <div class=" flex  mx-5">
+                  <div class=" tooltip tooltip-info " data-tip="Home">
+                    <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-house"></i>
+                   </div>
+                   <div class=" tooltip tooltip-info " data-tip="address">
+                    <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-pen"></i>
+                   </div>
+                   <div class=" tooltip tooltip-info " data-tip="address book"> 
+                    <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-address-book"></i>
+                   </div>
+                   <div class=" tooltip tooltip-info " data-tip="flag">  
+                    <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-flag"></i>
+                   </div>
+                </div>
               </ul>
             </div>
           </div>
           <div class="navbar-center">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+        
           </div>
-          <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            </button>
-            <button class="btn btn-ghost btn-circle">
-              <div class="indicator">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-                <span class="badge badge-xs badge-primary indicator-item"></span>
-              </div>
-            </button>
+          <div class="mt-5 navbar-end flex gap-2">
+           <div class="flex gap-4 cursor-pointer hidden lg:block ">
+         <div class="text-white tooltip tooltip-info" data-tip="Home">
+          <i class="bg-gray-400 text-white p-2 rounded-full mr-4 fa-solid fa-house"></i>
+         </div>
+         <div class=" tooltip tooltip-info " data-tip="address">
+          <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-pen"></i>
+         </div>
+         <div class=" tooltip tooltip-info" data-tip="address book"> 
+          <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-address-book"></i>
+         </div>
+         <div class=" tooltip tooltip-info" data-tip="flag">  
+          <i class="bg-gray-400 text-white p-2 rounded-full  mr-4 fa-solid fa-flag"></i>
+         </div>
+         
+          </div>
+          <button class="btn bg-sky-300 rounded-full text-black text-xl font-serif">sign in</button>
           </div>
         </div>
       </section>
+  
       <!-- <h1 id="count">0 </h1>
-      <button id="btn">add</button> -->
+      <button id="btn">add</button> --> 
       <section class=" container mx-auto px-8 lg:px-24 mt-8">
-        <div class="bg-[#12132D] p-14 gap-14 flex flex-col lg:flex-row justify-center rounded-md ">
+        <div class=" text-white p-14 gap-14 flex flex-col lg:flex-row justify-center rounded-md bg-cover bg-no-repeat bg-black  "  style="background-image: url('./images/banner.png')">
           <!-- left Side -->
+     
           <div class="">
-            <h1 class=" text-5xl max-w-[550px] lg:text-[64px] font-semibold">
-              Welcome to the 
-              <span class="bg-gradient-to-r from-blue-950 rounded-3xl  via-transparent to-transparent">ReTro</span>
+            <h1 class="leading-tight text-5xl max-w-[550px] lg:text-[64px] font-semibold">
+              Welcome to the
+         <span class="bg-gradient-to-r from-blue-500 via-transparent to-black rounded-md">ReTro</span>
               Forum  
               <!-- ar-gradient(90deg, #797DFC 0.63%, rgba(121, 125, 252, 0.00) 41%); -->
             </h1> 
             <p class="my-5">
               Share your favorite opinion and win and wp forum coffee mug!
             </p> 
-            <div class="text-center lg:text-left">
+            <div class="text-black ">
               <input
                 id="inputTxt"
-                class="p-2 rounded-3xl bg-[#FFFFFF]"
+                class="p-2 rounded-3xl bg-[#FFFFFF] border-none outline-none"
                 type="text"
                 name=""
                 id=""
               />
               <button
                onclick="handlebtn()"
-                class="bg-[#797DFC] rounded-2xl p-1 px-3 md:px-3 -translate-x-20  lg:-translate-x-20 text-white"
+                class="bg-[#797DFC] rounded-2xl p-1 px-3 md:px-3  lg:-translate-x-20 -translate-x-20 text-white"
               >
                 Search
               </button>
@@ -84,7 +106,7 @@
           </div>
           <!-- right side -->
           <div class="flex justify-center gap-20 md:flex-row md:gap-10 p-10 rounded-2xl text-[24px] bg-[#FFFFFF] ">
-   <div class="">
+   <div class="text-black">
     <h4>Registered Users </span></h4>
     <h4>Forum </h4>
     <h4>Topics </h4>
@@ -110,7 +132,7 @@
           app. The <br />
           integrated testing features allow for a streamlined .
         </p>
-        <span id="loading" class=" mx-auto text-3xl  bg-white loading loading-spinner loading-lg  text-center items-center
+        <span id="loading" class=" mx-auto text-3xl  bg-black loading loading-spinner loading-lg  text-center items-center
         justify-center flex "></span>
 
 
@@ -159,7 +181,7 @@
           </div> 
           <div class="">
             <!-- right -->
-            <div id="showDetails" class="bg-neutral-500 text-white mb-3 rounded-md py-5 px-3   mt-4">
+            <div id="showDetails" class="bg-indigo-400 text-white mb-3 rounded-md py-5 px-3   mt-4">
               <div class="flex justify-between lg:w-96 items-center ">
                 <h1 class="text-xl font-bold">Title </h1>
                   <p class="text-xl font-bold">mark as read: (<span id="count">0</span>) </p>
@@ -181,10 +203,12 @@
           </div>
         </div>
       </section>
-
+  
       <!-- ************************************************************ -->
-      <section class="container mx-auto px-8 lg:px-24  ">
-        <div class="flex flex-col lg:flex-row gap-10 items-center justify-around bg-[#12132D] p-8">
+      <!-- join forum  -->
+
+      <section class="container mx-auto px-8 lg:px-24 ">
+        <div class="flex flex-col lg:flex-row gap-10 items-center justify-around p-8 bg-[#12132D] text-white" >
           <div class="pt-10 ">
             <h1 class="text-[40px] font-extrabold">Join Our Forum</h1>
 
@@ -201,15 +225,20 @@
         </div>
       </section>
       <!-- *******************************************************************8 -->
+
+      <!-- Letest Post -->
+
       <section class="container mx-auto px-8 lg:px-24 mt-10">
         <div class="mb-10">
             <h1 class="text-2xl font-bold text-center">Letest Post</h1>
             <p class="my-2 mb-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti asperiores ipsam, minima qui officiis eius repellendus temporibus quo sint.</p>
+            <span id="loading2" class=" mx-auto text-3xl  bg-black loading loading-spinner loading-lg  text-center items-center
+            justify-center flex"></span>
         <div id="card" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-          <div class="  bg-slate-200 p-8">
-            <!-- main card -->
-            <div class="bg-neutral-300 w-full h-[230px]">
+          <!-- <div class="  bg-slate-200 p-8">
+            <div class="bg-neutral-300 w-full ">
+              <img class="" src="images/joinforum.png" alt="">
             </div>
             <h1 class="text-xl my-3">29 january 2024</h1>
             <h1>What will a mars habitat force that 
@@ -226,52 +255,16 @@
           </div>
 
            </div>
-        </div>
-          <div class="  bg-slate-200 p-8">
-            <!-- main card -->
-            <div class="bg-neutral-300 w-full h-[230px]">
-            </div>
-            <h1 class="text-xl my-3">29 january 2024</h1>
-            <h1>What will a mars habitat force that 
-                impact in our daily life!!!</h1>
-                <p class="my-3">Yes, you can run unit tests and view the 
-                    results directly within the app.</p>
-           <div class="flex gap-5">
-          <div class="">
-            <img src="images/logo.png" alt="">
-          </div>
-          <div class="">
-            <h1>camera man</h1>
-            <p>unknown</p>
-          </div>
+        </div> -->
 
-           </div>
-        </div>
-          <div class="  bg-slate-200 p-8">
-            <!-- main card -->
-            <div class="bg-neutral-300 w-full h-[230px]">
-            </div>
-            <h1 class="text-xl my-3">29 january 2024</h1>
-            <h1>What will a mars habitat force that 
-                impact in our daily life!!!</h1>
-                <p class="my-3">Yes, you can run unit tests and view the 
-                    results directly within the app.</p>
-           <div class="flex gap-5">
-          <div class="">
-            <img src="images/logo.png" alt="">
-          </div>
-          <div class="">
-            <h1>camera man</h1>
-            <p>unknown</p>
-          </div>
-
-           </div>
-        </div>
+        <!-- card 2 -->
+      
+     
         </div>
         </div>
       </section>
       <!-- *********************************************************88 -->
-
+                     <!-- footer section  -->
       <section>
         <div class="">
           <footer class="footer footer-center p-10 bg-slate-700 text-white">
